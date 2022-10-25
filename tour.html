@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourest</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="./lib/css/style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header ">
+            <div class="header-main box-shadow-hide">
+                <div class="container-fluid border-bottom border-color-8 border-color-white header-topbar-lg">
+                    <div class="d-flex align-items-center">
+                        <ul class="list-inline header-top__info mb-0">
+                            <li class="list-inline-item mr-0">
+                                <a title="(000) 999 - 898 -999" href="tel:(000)999-898-999" class="header-info__link">(000) 999 – 898 -999</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a title="info@mytravel.com" href="mailto:info@mytravel.com" class="header-info__link">info@mytravel.com</a>
+                            </li>
+                        </ul>
+                        <div class="ml-auto d-flex align-items-center">
+                            <ul class="list-inline social-media mb-0 mr-1 pr-1">
+                                <li class="list-inline-item">
+                                    <a title="Facebook" href="https://www.facebook.com/" class="btn btn-icon btn-xs">
+                                        <i class="fab fa-facebook-f btn-icon__inner btn-icon__inner" aria-hidden="true"></i>
+                                        <span class="sr-only">Facebook</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a title="Twitter" href="https://www.twitter.com/" class="btn btn-icon btn-xs">
+                                        <i class="fab fa-twitter btn-icon__inner btn-icon__inner " aria-hidden="true"></i>
+                                        <span class="sr-only">Twitter</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a title="Instagram" href="https://www.instagram.com/" class="btn btn-icon btn-xs">
+                                        <i class="fab fa-instagram btn-icon__inner btn-icon__inner " aria-hidden="true"></i>
+                                        <span class="sr-only">Instagram</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a title="Linkedin" href="https://www.linkedin.com/" class="btn btn-icon btn-xs">
+                                        <i class="fab fa-linkedin-in btn-icon__inner btn-icon__inner " aria-hidden="true"></i>
+                                        <span class="sr-only">Linkedin</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="position-relative px-3 header-top-divider">
+                                <a href="#" id="SignUpDropdownView" class="d-flex align-items-center  py-3" aria-controls="SignUpDropdown" data-unfold-target="#SignUpDropdown">
+                                    <i class="fa-light fa-user mr-2 ml-1 font-size-18"></i><span class="d-inline-block font-size-14 mr-1">Sign in or Register</span>
+                                </a>
+                                <div id="SignUpDropdown" class="dropdown-menu dropdown-menu-right" aria-labelledby="SignUpDropdownView" style="min-width: 500px; animation-duration: 300ms; right: 0px;">
+                                    <div class="card">
+                                        <form action="" class="js-validate" method="post">
+                                            <div id="login" style="opacity: 1;" class="animated fadeIn">
+                                                <div class="card-header text-center">
+                                                    <h3 class="h5 mb-0 font-weight-semi-bold">Login</h3>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative pl-3 languages-dropdown">
+                                <a href="#" class="languages-value">EUR </a>
+                                <ul class="dropdown-menu dropdown-menu-right mt-0">
+                                    <li>
+                                        <a title="USD" href="#" class="dropdown-item">USD</a>
+                                    </li>
+                                    <li>
+                                        <a title="EUR" href="#" class="dropdown-item">EUR</a>
+                                    </li>
+                                    <li>
+                                        <a title="TUR" href="#" class="dropdown-item">TUR</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid py-xl-2 border-bottom-xl">
+                    <div class="navbar header-navbar">
+                        <a href="./index.html" class="navbar-brand">
+                            <img src="./images/logo-white.svg" alt="">
+                            <span class="navbar-brand__text">MyTravel</span>
+                        </a>
+                        <a href="" class="text-white d-xl-none mr-2 mr-lg-2 ml-auto">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                        <button type="button" class="d-xl-none navbar-toggler btn ml-3">
+                            <div class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                                <span class="hamburger-inner"></span>
+                                <span class="hamburger-inner"></span>
+                            </div>
+                        </button>
+                        <div class="navbar-collapse position-relative collapse">
+                            <ul class="navbar-nav">
+                                <li class="menu-item">
+                                    <a href="./index.html" class="nav-link header-nav-link">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./hotel.html" class="nav-link header-nav-link">
+                                        Hotel
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./tour.html" class="nav-link header-nav-link">
+                                        Tour
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./activity.html" class="nav-link header-nav-link">
+                                        Activity
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./rental.html" class="nav-link header-nav-link">
+                                        Rental
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./car.html" class="nav-link header-nav-link">
+                                        Car
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="./yacht.html" class="nav-link header-nav-link">
+                                        Yacht
+                                    </a>
+                                </li>
+                                <li class="menu-item has-submenu">
+                                    <a href="javascript:;" class="nav-link header-nav-link">
+                                        Page
+                                    </a>
+                                    <ul class="sub-menu sub-menu-right">
+                                        <li>
+                                            <div class="sub-menu__content">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="./destination.html" class="nav-link submenu-nav-link">Destination</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="./about.html" class="nav-link submenu-nav-link">About us</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="./contact.html" class="nav-link submenu-nav-link">Contact us</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="./blogs.html" class="nav-link submenu-nav-link">Blog</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="./details-blog.html" class="nav-link submenu-nav-link">Blog Single</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-right position-relative d-flex align-items-center">
+                            <div class="shopping-card pl-2 pl-md-4 ml-auto">
+                                <a href="" class="py-4">
+                                    <i class="fa-regular fa-basket-shopping"></i>
+                                    <span class="badge right-end">
+                                        <span class="cart-contents-count">
+                                            0
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="pl-4 ml-1 header-last-btn">
+                                <a href="#" class="btn btn-primary">
+                                    Become Local Expert 
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="hotel-wrapper">
+                <div class="container pt-xl-8 pt-5">
+                    <div class="row mb-5 mb-lg-8 mt-xl-1">
+                        <div class="hotel-main col-lg-8 col-xl-9 order-1 pb-5 pb-lg-0 order-lg-2">
+                            <div class="d-md-flex justify-content-between align-items-center mb-4">
+                                <h3 class="font-size-21 font-weight-bold mb-0">
+                                    <span class="page-title">Hotel:</span> 21 results found
+                                </h3>
+                                <ul class="nav tab-nav-shop flex-nowrap mt-4 mt-md-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link p-0" id="list-view-tab" data-toggle="tab" href="#list-view" role="tab" aria-controls="list-view-tab" aria-selected="false">
+                                            <i class="fa-solid fa-list"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link p-0 ml-2 active" id="grid-view-tab" data-toggle="tab" href="#grid-view" role="tab" aria-controls="grid-view-tab" aria-selected="true">
+                                            <i class="fa-solid fa-grid"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="sort-bar mb-5">
+                                <ul class="nav flex-nowrap border border-radius-3 tab-nav align-items-center py-2 px-0">
+                                    <li class="nav-item d-flex align-items-center flex-shrink-0 flex-xl-shrink-1">
+                                        <a href="" class="nav-link text-gray-1 py-1 px-4 px-wd-5">
+                                            Popularity
+                                        </a>
+                                    </li>
+                                    <li class="nav-item d-flex align-items-center flex-shrink-0 flex-xl-shrink-1">
+                                        <a href="" class="nav-link text-gray-1 py-1 px-4 px-wd-5">
+                                            Guest rating
+                                        </a>
+                                    </li>
+                                    <li class="nav-item d-flex align-items-center flex-shrink-0 flex-xl-shrink-1">
+                                        <a href="" class="nav-link text-gray-1 py-1 px-4 px-wd-5">
+                                            latest
+                                        </a>
+                                    </li>
+                                    <li class="nav-item d-flex align-items-center flex-shrink-0 flex-xl-shrink-1">
+                                        <a href="" class="nav-link text-gray-1 py-1 px-4 px-wd-5">
+                                            Price: low to high
+                                        </a>
+                                    </li>
+                                    <li class="nav-item d-flex align-items-center flex-shrink-0 flex-xl-shrink-1">
+                                        <a href="" class="nav-link text-gray-1 py-1 px-4 px-wd-5">
+                                            Price: high to low
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane fade active show" id="grid-view" role="tabpanel" aria-labelledby="grid-view-tab">
+                                    <div class="row list-unstyled product mb-0">
+                                        <div class="col-xl-4 product-item mb-3 mb-md-4 pb-1">
+                                            <div class="trending-list__item">
+                                                <div class="card">
+                                                    <div class="card-header position-relative mb-2 p-0">
+                                                        <a href="" class="trending-img">
+                                                            <img src="./images/img4-2-300x225.jpeg" alt="" class="card-img-top">
+                                                        </a>
+
+                                                        <div class="loop-wishlist pt-5 pr-3">
+                                                            <a href="" class="add-to-wishlist btn-icon btn-sm">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="price-wrap">
+                                                            <div class="px-3 pb-2">
+                                                                <span class="loop-product__category">
+                                                                    <a href="">
+                                                                        Culturals Tours
+                                                                    </a>
+                                                                </span>
+                                                                <span class="price">
+                                                                    <span class="mr-1 text-white">From</span>
+                                                                <span class="price-amount">
+                                                                        <bdi>
+                                                                            <span class="price-symple">$</span> 634.00
+                                                                </bdi>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body position-relative px-4 py-2">
+                                                        <a href="" class="d-block">
+                                                            <div class="d-flex mb-1 align-items-center text-gray-1 font-size-14">
+                                                                <i class="fa-regular fa-location-dot font-size-15 mr-2"></i> Istanbul, Turkey
+                                                            </div>
+                                                        </a>
+                                                        <a href="./details-tour.html" class="card-title text-dark">
+                                                            <h2>
+                                                                5-Day Oahu Tour: Honolulu, Pearl Harbor, &amp; Diamond Head
+                                                            </h2>
+                                                        </a>
+                                                        <div class="my-2">
+                                                            <div class="review-star">
+                                                                <span class="green-lighter"><small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="far fa-star"></small>
+                                                                    </span>
+                                                                <span class="font-size-14 rating-count ml-2 text-secondary mt-1">(1 review)</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+                                                            <i class="fa-regular fa-clock mr-2 font-size-14"></i> 3 hours 45 minutes </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 product-item mb-3 mb-md-4 pb-1">
+                                            <div class="trending-list__item">
+                                                <div class="card">
+                                                    <div class="card-header position-relative mb-2 p-0">
+                                                        <a href="" class="trending-img">
+                                                            <img src="./images/stone-resize-300x225.jpg" alt="" class="card-img-top">
+                                                        </a>
+                                                        <div class="badge-box pt-5 pl-3">
+                                                            <span class="badge badge-pill bg-white text-primary py-2 px-4">Featured</span>
+                                                            <span class="badge badge-pill bg-white text-danger px-3 ml-3 py-2">25%</span>
+                                                        </div>
+                                                        <div class="loop-wishlist pt-5 pr-3">
+                                                            <a href="" class="add-to-wishlist btn-icon btn-sm">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="price-wrap">
+                                                            <div class="px-3 pb-2">
+                                                                <span class="loop-product__category">
+                                                                    <a href="">
+                                                                        Culturals Tours
+                                                                    </a>
+                                                                </span>
+                                                                <span class="price">
+                                                                    
+                                                                   <del aria-hidden="true">
+                                                                    <span class="price-amount">
+                                                                        <bdi>
+                                                                            <span class="price-symple">$</span> 634.00
+                                                                </bdi>
+                                                                </span>
+                                                                </del>
+                                                                <ins>
+                                                                    <span class="price-amount">
+                                                                        <bdi>
+                                                                            <span class="price-symple">$</span> 634.00
+                                                                </bdi>
+                                                                </span>
+                                                                </ins>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body position-relative px-4 py-2">
+                                                        <a href="" class="d-block">
+                                                            <div class="d-flex mb-1 align-items-center text-gray-1 font-size-14">
+                                                                <i class="fa-regular fa-location-dot font-size-15 mr-2"></i> Istanbul, Turkey
+                                                            </div>
+                                                        </a>
+                                                        <a href="./details-tour.html" class="card-title text-dark">
+                                                            <h2>
+                                                                5-Day Oahu Tour: Honolulu, Pearl Harbor, &amp; Diamond Head
+                                                            </h2>
+                                                        </a>
+                                                        <div class="my-2">
+                                                            <div class="review-star">
+                                                                <span class="green-lighter"><small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="far fa-star"></small>
+                                                                    </span>
+                                                                <span class="font-size-14 rating-count ml-2 text-secondary mt-1">(1 review)</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+                                                            <i class="fa-regular fa-clock mr-2 font-size-14"></i> 3 hours 45 minutes </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 product-item mb-3 mb-md-4 pb-1">
+                                            <div class="trending-list__item">
+                                                <div class="card">
+                                                    <div class="card-header position-relative mb-2 p-0">
+                                                        <a href="" class="trending-img">
+                                                            <img src="./images/img4-2-300x225.jpeg" alt="" class="card-img-top">
+                                                        </a>
+
+                                                        <div class="loop-wishlist pt-5 pr-3">
+                                                            <a href="" class="add-to-wishlist btn-icon btn-sm">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="price-wrap">
+                                                            <div class="px-3 pb-2">
+                                                                <span class="loop-product__category">
+                                                                    <a href="">
+                                                                        Culturals Tours
+                                                                    </a>
+                                                                </span>
+                                                                <span class="price">
+                                                                    <span class="mr-1 text-white">From</span>
+                                                                <span class="price-amount">
+                                                                        <bdi>
+                                                                            <span class="price-symple">$</span> 634.00
+                                                                </bdi>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body position-relative px-4 py-2">
+                                                        <a href="" class="d-block">
+                                                            <div class="d-flex mb-1 align-items-center text-gray-1 font-size-14">
+                                                                <i class="fa-regular fa-location-dot font-size-15 mr-2"></i> Istanbul, Turkey
+                                                            </div>
+                                                        </a>
+                                                        <a href="./details-tour.html" class="card-title text-dark">
+                                                            <h2>
+                                                                5-Day Oahu Tour: Honolulu, Pearl Harbor, &amp; Diamond Head
+                                                            </h2>
+                                                        </a>
+                                                        <div class="my-2">
+                                                            <div class="review-star">
+                                                                <span class="green-lighter"><small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="far fa-star"></small>
+                                                                    </span>
+                                                                <span class="font-size-14 rating-count ml-2 text-secondary mt-1">(1 review)</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+                                                            <i class="fa-regular fa-clock mr-2 font-size-14"></i> 3 hours 45 minutes </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 product-item mb-3 mb-md-4 pb-1">
+                                            <div class="trending-list__item">
+                                                <div class="card">
+                                                    <div class="card-header position-relative mb-2 p-0">
+                                                        <a href="" class="trending-img">
+                                                            <img src="./images/stone-resize-300x225.jpg" alt="" class="card-img-top">
+                                                        </a>
+                                                        <div class="badge-box pt-5 pl-3">
+                                                            <span class="badge badge-pill bg-white text-primary py-2 px-4">Featured</span>
+                                                            <span class="badge badge-pill bg-white text-danger px-3 ml-3 py-2">25%</span>
+                                                        </div>
+                                                        <div class="loop-wishlist pt-5 pr-3">
+                                                            <a href="" class="add-to-wishlist btn-icon btn-sm">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="price-wrap">
+                                                            <div class="px-3 pb-2">
+                                                                <span class="loop-product__category">
+                                                                    <a href="">
+                                                                        Culturals Tours
+                                                                    </a>
+                                                                </span>
+                                                                <span class="price">
+                                                                    
+                                                                   <del aria-hidden="true">
+                                                                    <span class="price-amount">
+                                                                        <bdi>
+                                                                            <span class="price-symple">$</span> 634.00
+                                                                </bdi>
+                                                                </span>
+                                                                </del>
+                                                                <ins>
+                                                                    <span class="price-amount">
+                                                                        <bdi>
+                                                                            <span class="price-symple">$</span> 634.00
+                                                                </bdi>
+                                                                </span>
+                                                                </ins>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body position-relative px-4 py-2">
+                                                        <a href="" class="d-block">
+                                                            <div class="d-flex mb-1 align-items-center text-gray-1 font-size-14">
+                                                                <i class="fa-regular fa-location-dot font-size-15 mr-2"></i> Istanbul, Turkey
+                                                            </div>
+                                                        </a>
+                                                        <a href="./details-tour.html" class="card-title text-dark">
+                                                            <h2>
+                                                                5-Day Oahu Tour: Honolulu, Pearl Harbor, &amp; Diamond Head
+                                                            </h2>
+                                                        </a>
+                                                        <div class="my-2">
+                                                            <div class="review-star">
+                                                                <span class="green-lighter"><small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="far fa-star"></small>
+                                                                    </span>
+                                                                <span class="font-size-14 rating-count ml-2 text-secondary mt-1">(1 review)</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+                                                            <i class="fa-regular fa-clock mr-2 font-size-14"></i> 3 hours 45 minutes </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 product-item mb-3 mb-md-4 pb-1">
+                                            <div class="trending-list__item">
+                                                <div class="card">
+                                                    <div class="card-header position-relative mb-2 p-0">
+                                                        <a href="" class="trending-img">
+                                                            <img src="./images/img4-2-300x225.jpeg" alt="" class="card-img-top">
+                                                        </a>
+
+                                                        <div class="loop-wishlist pt-5 pr-3">
+                                                            <a href="" class="add-to-wishlist btn-icon btn-sm">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="price-wrap">
+                                                            <div class="px-3 pb-2">
+                                                                <span class="loop-product__category">
+                                                                    <a href="">
+                                                                        Culturals Tours
+                                                                    </a>
+                                                                </span>
+                                                                <span class="price">
+                                                                    <span class="mr-1 text-white">From</span>
+                                                                <span class="price-amount">
+                                                                        <bdi>
+                                                                            <span class="price-symple">$</span> 634.00
+                                                                </bdi>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body position-relative px-4 py-2">
+                                                        <a href="" class="d-block">
+                                                            <div class="d-flex mb-1 align-items-center text-gray-1 font-size-14">
+                                                                <i class="fa-regular fa-location-dot font-size-15 mr-2"></i> Istanbul, Turkey
+                                                            </div>
+                                                        </a>
+                                                        <a href="./details-tour.html" class="card-title text-dark">
+                                                            <h2>
+                                                                5-Day Oahu Tour: Honolulu, Pearl Harbor, &amp; Diamond Head
+                                                            </h2>
+                                                        </a>
+                                                        <div class="my-2">
+                                                            <div class="review-star">
+                                                                <span class="green-lighter"><small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="far fa-star"></small>
+                                                                    </span>
+                                                                <span class="font-size-14 rating-count ml-2 text-secondary mt-1">(1 review)</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+                                                            <i class="fa-regular fa-clock mr-2 font-size-14"></i> 3 hours 45 minutes </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 product-item mb-3 mb-md-4 pb-1">
+                                            <div class="trending-list__item">
+                                                <div class="card">
+                                                    <div class="card-header position-relative mb-2 p-0">
+                                                        <a href="" class="trending-img">
+                                                            <img src="./images/stone-resize-300x225.jpg" alt="" class="card-img-top">
+                                                        </a>
+                                                        <div class="badge-box pt-5 pl-3">
+                                                            <span class="badge badge-pill bg-white text-primary py-2 px-4">Featured</span>
+                                                            <span class="badge badge-pill bg-white text-danger px-3 ml-3 py-2">25%</span>
+                                                        </div>
+                                                        <div class="loop-wishlist pt-5 pr-3">
+                                                            <a href="" class="add-to-wishlist btn-icon btn-sm">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="price-wrap">
+                                                            <div class="px-3 pb-2">
+                                                                <span class="loop-product__category">
+                                                                    <a href="">
+                                                                        Culturals Tours
+                                                                    </a>
+                                                                </span>
+                                                                <span class="price">
+                                                                    
+                                                                   <del aria-hidden="true">
+                                                                    <span class="price-amount">
+                                                                        <bdi>
+                                                                            <span class="price-symple">$</span> 634.00
+                                                                </bdi>
+                                                                </span>
+                                                                </del>
+                                                                <ins>
+                                                                    <span class="price-amount">
+                                                                        <bdi>
+                                                                            <span class="price-symple">$</span> 634.00
+                                                                </bdi>
+                                                                </span>
+                                                                </ins>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body position-relative px-4 py-2">
+                                                        <a href="" class="d-block">
+                                                            <div class="d-flex mb-1 align-items-center text-gray-1 font-size-14">
+                                                                <i class="fa-regular fa-location-dot font-size-15 mr-2"></i> Istanbul, Turkey
+                                                            </div>
+                                                        </a>
+                                                        <a href="./details-tour.html" class="card-title text-dark">
+                                                            <h2>
+                                                                5-Day Oahu Tour: Honolulu, Pearl Harbor, &amp; Diamond Head
+                                                            </h2>
+                                                        </a>
+                                                        <div class="my-2">
+                                                            <div class="review-star">
+                                                                <span class="green-lighter"><small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="far fa-star"></small>
+                                                                    </span>
+                                                                <span class="font-size-14 rating-count ml-2 text-secondary mt-1">(1 review)</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+                                                            <i class="fa-regular fa-clock mr-2 font-size-14"></i> 3 hours 45 minutes </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 product-item mb-3 mb-md-4 pb-1">
+                                            <div class="trending-list__item">
+                                                <div class="card">
+                                                    <div class="card-header position-relative mb-2 p-0">
+                                                        <a href="" class="trending-img">
+                                                            <img src="./images/img4-2-300x225.jpeg" alt="" class="card-img-top">
+                                                        </a>
+
+                                                        <div class="loop-wishlist pt-5 pr-3">
+                                                            <a href="" class="add-to-wishlist btn-icon btn-sm">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="price-wrap">
+                                                            <div class="px-3 pb-2">
+                                                                <span class="loop-product__category">
+                                                                    <a href="">
+                                                                        Culturals Tours
+                                                                    </a>
+                                                                </span>
+                                                                <span class="price">
+                                                                    <span class="mr-1 text-white">From</span>
+                                                                <span class="price-amount">
+                                                                        <bdi>
+                                                                            <span class="price-symple">$</span> 634.00
+                                                                </bdi>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body position-relative px-4 py-2">
+                                                        <a href="" class="d-block">
+                                                            <div class="d-flex mb-1 align-items-center text-gray-1 font-size-14">
+                                                                <i class="fa-regular fa-location-dot font-size-15 mr-2"></i> Istanbul, Turkey
+                                                            </div>
+                                                        </a>
+                                                        <a href="./details-tour.html" class="card-title text-dark">
+                                                            <h2>
+                                                                5-Day Oahu Tour: Honolulu, Pearl Harbor, &amp; Diamond Head
+                                                            </h2>
+                                                        </a>
+                                                        <div class="my-2">
+                                                            <div class="review-star">
+                                                                <span class="green-lighter"><small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="far fa-star"></small>
+                                                                    </span>
+                                                                <span class="font-size-14 rating-count ml-2 text-secondary mt-1">(1 review)</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+                                                            <i class="fa-regular fa-clock mr-2 font-size-14"></i> 3 hours 45 minutes </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 product-item mb-3 mb-md-4 pb-1">
+                                            <div class="trending-list__item">
+                                                <div class="card">
+                                                    <div class="card-header position-relative mb-2 p-0">
+                                                        <a href="" class="trending-img">
+                                                            <img src="./images/stone-resize-300x225.jpg" alt="" class="card-img-top">
+                                                        </a>
+                                                        <div class="badge-box pt-5 pl-3">
+                                                            <span class="badge badge-pill bg-white text-primary py-2 px-4">Featured</span>
+                                                            <span class="badge badge-pill bg-white text-danger px-3 ml-3 py-2">25%</span>
+                                                        </div>
+                                                        <div class="loop-wishlist pt-5 pr-3">
+                                                            <a href="" class="add-to-wishlist btn-icon btn-sm">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="price-wrap">
+                                                            <div class="px-3 pb-2">
+                                                                <span class="loop-product__category">
+                                                                    <a href="">
+                                                                        Culturals Tours
+                                                                    </a>
+                                                                </span>
+                                                                <span class="price">
+                                                                    
+                                                                   <del aria-hidden="true">
+                                                                    <span class="price-amount">
+                                                                        <bdi>
+                                                                            <span class="price-symple">$</span> 634.00
+                                                                </bdi>
+                                                                </span>
+                                                                </del>
+                                                                <ins>
+                                                                    <span class="price-amount">
+                                                                        <bdi>
+                                                                            <span class="price-symple">$</span> 634.00
+                                                                </bdi>
+                                                                </span>
+                                                                </ins>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body position-relative px-4 py-2">
+                                                        <a href="" class="d-block">
+                                                            <div class="d-flex mb-1 align-items-center text-gray-1 font-size-14">
+                                                                <i class="fa-regular fa-location-dot font-size-15 mr-2"></i> Istanbul, Turkey
+                                                            </div>
+                                                        </a>
+                                                        <a href="./details-tour.html" class="card-title text-dark">
+                                                            <h2>
+                                                                5-Day Oahu Tour: Honolulu, Pearl Harbor, &amp; Diamond Head
+                                                            </h2>
+                                                        </a>
+                                                        <div class="my-2">
+                                                            <div class="review-star">
+                                                                <span class="green-lighter"><small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="fas fa-star"></small>
+                                                                    <small class="far fa-star"></small>
+                                                                    </span>
+                                                                <span class="font-size-14 rating-count ml-2 text-secondary mt-1">(1 review)</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+                                                            <i class="fa-regular fa-clock mr-2 font-size-14"></i> 3 hours 45 minutes </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="list-view" role="tabpanel" aria-labelledby="list-view-tab">
+
+                                    <ul class="row list-unstyled product mb-0">
+                                        <li class="col-12 product-item ">
+
+                                            <div class="card mb-5 overflow-hidden">
+                                                <div class="product-inner__outer w-100">
+                                                    <div class="row">
+                                                        <div class="col-md-5 col-xl-4">
+                                                            <div class="tour-detail-slide">
+                                                                <div class="item">
+                                                                    <img src="./images/img4-2.jpeg" alt="">
+                                                                </div>
+                                                                <div class="item">
+                                                                    <img src="./images/img4-3.jpg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-7 col-xl-5 col-wd-4gdot5 flex-horizontal-center">
+                                                            <div class="w-100 position-relative m-4 m-md-0">
+                                                                <div class="mb-1 pb-1">
+                                                                    <div class="d-block d-md-inline font-size-14">
+                                                                        <span class="green-lighter">
+                                                                            <i class="fa-solid fa-star font-size-10"></i>
+                                                                            <i class="fa-solid fa-star font-size-10"></i>
+                                                                            <i class="fa-solid fa-star font-size-10"></i>
+                                                                            <i class="fa-solid fa-star font-size-10"></i>
+                                                                            <i class="fa-solid fa-star font-size-10"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="loop-wishlist  pr-md-3 d-none d-md-block">
+                                                                    <a href="" class="add-to-wishlist btn btn-icon btn-sm">
+                                                                        <i class="fa-regular fa-heart font-size-20"></i>
+                                                                    </a>
+                                                                </div>
+                                                                <a href="./details-tour.html">
+                                                                    <span class="font-weight-medium font-size-17 text-dark d-flex mb-1">
+                                                                        Empire Prestige Causeway Bay
+                                                                    </span>
+                                                                </a>
+                                                                <div class="card-body p-0">
+                                                                    <a href="./details-tour.html" class="d-block mb-3">
+                                                                        <div class="d-flex flex-wrap flex-xl-nowrap align-items-center font-size-14 text-gray-1">
+                                                                            <i class="fa-regular fa-location-dot mr-2 font-size-20"></i> Greater London, United Kingdom <small class="px-1 font-size-15"> - </small>
+                                                                            <span class="text-primary font-size-14">View on map</span>
+                                                                        </div>
+                                                                    </a>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col col-xl-3 col-wd-3gdot5 align-self-center py-4 py-xl-0 border-xl-top-0">
+                                                            <div class="d-xl-flex flex-wrap flex-column border-xl-left ml-4 ml-xl-0 pr-xl-3 pr-wd-5 text-xl-right justify-content-xl-end">
+                                                                <div class="ml-md-4 ml-xl-0">
+                                                                    <div class="text-center text-md-left text-xl-center d-flex flex-column mb-2 pb-1 ml-md-3 ml-xl-0">
+                                                                        <div class="d-flex flex-column mb-2">
+                                                                            <span class="tour-loop-product__categories text-truncate d-block"><a class="font-weight-normal font-size-14 text-white" href="" rel="tag">Culturals Tours</a></span> <span class="font-weight-normal font-size-14 text-gray-1">
+                                                                        3 hours 45 minutes </span>
+                                                                        </div>
+                                                                        <div class="mb-0">
+                                                                            <span class="price">
+                                                                        <span class="mr-1 font-size-14 text-gray-1">From</span> <span class="tour-price-amount font-weight-bold font-size-22 amount"><span class="tour-price-currencySymbol">$</span>634.00</span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-center justify-content-md-start justify-content-xl-center">
+                                                                        <a href="./details-tour.html" class="btn btn-outline-primary d-flex align-items-center justify-content-center font-weight-bold min-height-50 border-radius-3 border-width-2 px-2 px-5 py-2">View Detail </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-center text-md-left font-size-14 mb-3 text-lh-1">
+                                <p class="result-count text-dark text-lh-1">
+                                    Showing 1–18 of 21 results</p>
+                            </div>
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination border border-color-4 rounded-sm justify-content-md-center align-items-center py-2 mb-0">
+                                    <li class="page-item active">
+                                        <span class=" page-link current">1</span>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="font-size-14 page-link" href="">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="next font-size-14 page-link" href="">
+                                            <i class="fa-solid fa-angle-right font-size-10 font-weight-bold"></i>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="shop-sidebar col-lg-4 col-xl-3 order-lg-1 width-md-50">
+                            <div class="navbar-expand-lg">
+                                <button class="btn d-lg-none mb-5 p-0 collapsed" data-target="#shop-sidebar" data-toggle="collapse" aria-expanded="true">
+                                    <i class="fa-regular fa-square-caret-down font-size-20 text-primary card-btn-arrow ml-0"></i>
+                                    <span class="text-primary ml-2">Sidebar</span>
+                                </button>
+                                <div id="shop-sidebar" class="navbar-collapse collapse">
+                                    <div class="mb-6 w-100">
+                                        <div class="widget widget-product-search pb-4 mb-2">
+                                            <div class="sidenav border border-color-8 rounded-xs p-4">
+                                                <h4 class="widget-title font-weight-bold font-size-17 mb-2 mb-xl-4">Destination or Hotel Name</h4>
+                                                <form action="" class="product-search input-group input-group-borderless">
+                                                    <div class="search-inner w-100">
+                                                        <div class="mb-4">
+                                                            <div class="input-group border-bottom border-width-2 border-color-1">
+                                                                <input type="search" name="" id="" class="search-field form-control font-weight-medium border-0 p-0" placeholder="Search ...">
+                                                                <input type="hidden" class="form-control" name="post_type" value="product">
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <button type="submit" class="btn btn-primary height-60 w-100 font-weight-bold mb-xl-0 mb-lg-1 transition-3d-hover"><i class="flaticon-magnifying-glass mr-2 font-size-17"></i>Search</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="widget widget-product-filter pb-4 mb-2">
+                                            <div class="sidenav border border-color-8 rounded-xs p-4">
+                                                <div class="product-filter mx-n4 my-n4">
+                                                    <!-- <div class="widget widget-rating-filter accordion rounded-0 shadow-none border-bottom">
+                                                        <div class="border-0">
+                                                            <div class="card-collapse">
+                                                                <h3 class="widget-title mb-0">
+                                                                    <button class="btn btn-link btn-block card-btn py-2 px-5 text-lh-3" type="button" data-toggle="collapse" data-target="#ratingFilter" aria-expanded="false" aria-controls="collapseExample">
+                                                                        <span class="row align-items-center">
+                                                                            <span class="col-9">
+                                                                                <span class="font-weight-bold font-size-17 text-dark mb-3">Star rating</span>
+                                                                            </span>
+                                                                            <span class="col-3 text-right">
+                                                                                <span class="card-btn-arrow">
+                                                                                    <i class="fa-solid fa-chevron-up small"></i>
+                                                                                </span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div class="collapse show" id="ratingFilter">
+                                                                <div class="card-body pt-0 mt-1 px-5 pb-4">
+                                                                    <ul class="filter-nav-list">
+                                                                        <li class="item-nav-rating custom-checkbox">
+                                                                            <input type="checkbox" name="" id="rating-star1" class="custom-control-input">
+                                                                            <label for="rating-star1" class="custom-control-label">
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                            </label>
+                                                                        </li>
+                                                                        <li class="item-nav-rating custom-checkbox">
+                                                                            <input type="checkbox" name="" id="rating-star2" class="custom-control-input">
+                                                                            <label for="rating-star2" class="custom-control-label">
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                            </label>
+                                                                        </li>
+                                                                        <li class="item-nav-rating custom-checkbox">
+                                                                            <input type="checkbox" name="" id="rating-star3" class="custom-control-input">
+                                                                            <label for="rating-star3" class="custom-control-label">
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                            </label>
+                                                                        </li>
+                                                                        <li class="item-nav-rating custom-checkbox">
+                                                                            <input type="checkbox" name="" id="rating-star4" class="custom-control-input">
+                                                                            <label for="rating-star4" class="custom-control-label">
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                            </label>
+                                                                        </li>
+                                                                        <li class="item-nav-rating custom-checkbox">
+                                                                            <input type="checkbox" name="" id="rating-star5" class="custom-control-input">
+                                                                            <label for="rating-star5" class="custom-control-label">
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                            </label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                    <div class="widget widget-rating-filter guest-rating-filter accordion rounded-0 shadow-none border-bottom">
+                                                        <div class="border-0">
+                                                            <div class="card-collapse">
+                                                                <h3 class="widget-title mb-0">
+                                                                    <button class="btn btn-link btn-block card-btn py-2 px-5 text-lh-3" type="button" data-toggle="collapse" data-target="#ratingguestFilter" aria-expanded="false" aria-controls="collapseExample">
+                                                                        <span class="row align-items-center">
+                                                                            <span class="col-9">
+                                                                                <span class="font-weight-bold font-size-17 text-dark mb-3">Guest rating</span>
+                                                                            </span>
+                                                                            <span class="col-3 text-right">
+                                                                                <span class="card-btn-arrow">
+                                                                                    <i class="fa-solid fa-chevron-up small"></i>
+                                                                                </span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div class="collapse show" id="ratingguestFilter">
+                                                                <div class="card-body pt-0 mt-1 px-5 pb-4">
+                                                                    <ul class="filter-nav-list">
+                                                                        <li class="item-nav-rating custom-checkbox">
+                                                                            <input type="checkbox" name="" id="rating-guest1" class="custom-control-input">
+                                                                            <label for="rating-guest1" class="custom-control-label">
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                            </label>
+                                                                        </li>
+                                                                        <li class="item-nav-rating custom-checkbox">
+                                                                            <input type="checkbox" name="" id="rating-guest2" class="custom-control-input">
+                                                                            <label for="rating-guest2" class="custom-control-label">
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                                <i class="fa-solid fa-star"></i>
+                                                                                <i class="fa-regular fa-star"></i>
+                                                                            </label>
+                                                                        </li>
+
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="widget widget-price-filter accordion rounded-0 shadow-none border-bottom">
+                                                        <div class="border-0">
+                                                            <div class="card-collapse">
+                                                                <h3 class="widget-title mb-0">
+                                                                    <button class="btn btn-link btn-block card-btn py-2 px-5 text-lh-3" type="button" data-toggle="collapse" data-target="#priceFilter" aria-expanded="false" aria-controls="collapseExample">
+                                                                        <span class="row align-items-center">
+                                                                            <span class="col-9">
+                                                                                <span class="font-weight-bold font-size-17 text-dark mb-3">Price Ranger($)</span>
+                                                                            </span>
+                                                                            <span class="col-3 text-right">
+                                                                                <span class="card-btn-arrow">
+                                                                                    <i class="fa-solid fa-chevron-up small"></i>
+                                                                                </span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div class="collapse show" id="priceFilter">
+                                                                <div class="card-body pt-0 mt-1 px-5 pb-4">
+                                                                    <form action="">
+                                                                        <p class="range-value">
+                                                                            <input type="text" id="amount" readonly>
+                                                                        </p>
+                                                                        <div id="slider-range" class="range-bar"></div>
+                                                                        <button type="submit" class="btn btn-primary btn-sm mt-3">Filter</button>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div class="widget widget-layered-nav accordion rounded-0 shadow-none border-bottom">
+                                                        <div class="border-0">
+                                                            <div class="card-collapse">
+                                                                <h3 class="widget-title mb-0">
+                                                                    <button class="btn btn-link btn-block card-btn py-2 px-5 text-lh-3" type="button" data-toggle="collapse" data-target="#layeredFilter" aria-expanded="false" aria-controls="collapseExample">
+                                                                        <span class="row align-items-center">
+                                                                            <span class="col-9">
+                                                                                <span class="font-weight-bold font-size-17 text-dark mb-3">Meals</span>
+                                                                            </span>
+                                                                            <span class="col-3 text-right">
+                                                                                <span class="card-btn-arrow">
+                                                                                    <i class="fa-solid fa-chevron-up small"></i>
+                                                                                </span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div class="collapse show" id="layeredFilter">
+                                                                <div class="card-body pt-0 mt-1 px-5 pb-4">
+                                                                    <ul class="filter-nav-list">
+                                                                        <li class="item-nav-layered custom-checkbox">
+                                                                            <input type="checkbox" name="" id="layered-nav1" class="custom-control-input">
+                                                                            <label for="layered-nav1" class="custom-control-label">
+                                                                               All-inclusive
+                                                                            </label>
+                                                                            <span class="count">2</span>
+                                                                        </li>
+                                                                        <li class="item-nav-layered custom-checkbox">
+                                                                            <input type="checkbox" name="" id="layered-nav2" class="custom-control-input">
+                                                                            <label for="layered-nav2" class="custom-control-label">
+                                                                                Breakfast &amp; dinner included
+                                                                            </label>
+                                                                            <span class="count">3</span>
+                                                                        </li>
+                                                                        <li class="item-nav-layered custom-checkbox">
+                                                                            <input type="checkbox" name="" id="layered-nav3" class="custom-control-input">
+                                                                            <label for="layered-nav3" class="custom-control-label">
+                                                                                Breakfast Included
+                                                                            </label>
+                                                                            <span class="count">2</span>
+                                                                        </li>
+                                                                        <li class="item-nav-layered custom-checkbox">
+                                                                            <input type="checkbox" name="" id="layered-nav4" class="custom-control-input">
+                                                                            <label for="layered-nav4" class="custom-control-label">
+                                                                                Kitchen facilities
+                                                                            </label>
+                                                                            <span class="count">4</span>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="widget widget-layered-nav accordion rounded-0 shadow-none border-bottom">
+                                                        <div class="border-0">
+                                                            <div class="card-collapse">
+                                                                <h3 class="widget-title mb-0">
+                                                                    <button class="btn btn-link btn-block card-btn py-2 px-5 text-lh-3" type="button" data-toggle="collapse" data-target="#layeredFilterFacilities" aria-expanded="false" aria-controls="collapseExample">
+                                                                        <span class="row align-items-center">
+                                                                            <span class="col-9">
+                                                                                <span class="font-weight-bold font-size-17 text-dark mb-3">Facilities</span>
+                                                                            </span>
+                                                                            <span class="col-3 text-right">
+                                                                                <span class="card-btn-arrow">
+                                                                                    <i class="fa-solid fa-chevron-up small"></i>
+                                                                                </span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div class="collapse show" id="layeredFilterFacilities">
+                                                                <div class="card-body pt-0 mt-1 px-5 pb-4">
+                                                                    <ul class="filter-nav-list">
+                                                                        <li class="item-nav-layered custom-checkbox">
+                                                                            <input type="checkbox" name="" id="faciliti-nav1" class="custom-control-input">
+                                                                            <label for="faciliti-nav1" class="custom-control-label">
+                                                                               Gucci
+                                                                            </label>
+                                                                            <span class="count">2</span>
+                                                                        </li>
+                                                                        <li class="item-nav-layered custom-checkbox">
+                                                                            <input type="checkbox" name="" id="faciliti-nav2" class="custom-control-input">
+                                                                            <label for="faciliti-nav2" class="custom-control-label">
+                                                                                Mango
+                                                                            </label>
+                                                                            <span class="count">3</span>
+                                                                        </li>
+                                                                        <li class="item-nav-layered custom-checkbox">
+                                                                            <input type="checkbox" name="" id="faciliti-nav3" class="custom-control-input">
+                                                                            <label for="faciliti-nav3" class="custom-control-label">
+                                                                                Parking
+                                                                            </label>
+                                                                            <span class="count">2</span>
+                                                                        </li>
+                                                                        <li class="item-nav-layered custom-checkbox">
+                                                                            <input type="checkbox" name="" id="faciliti-nav4" class="custom-control-input">
+                                                                            <label for="faciliti-nav4" class="custom-control-label">
+                                                                                Pet friendly
+                                                                            </label>
+                                                                            <span class="count">4</span>
+                                                                        </li>
+                                                                        <li class="item-nav-layered custom-checkbox">
+                                                                            <input type="checkbox" name="" id="faciliti-nav5" class="custom-control-input">
+                                                                            <label for="faciliti-nav5" class="custom-control-label">
+                                                                                Restaurant
+                                                                            </label>
+                                                                            <span class="count">2</span>
+                                                                        </li>
+                                                                        <li class="item-nav-layered custom-checkbox">
+                                                                            <input type="checkbox" name="" id="faciliti-nav6" class="custom-control-input">
+                                                                            <label for="faciliti-nav6" class="custom-control-label">
+                                                                                Room service
+                                                                            </label>
+                                                                            <span class="count">4</span>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                    <div class="widget widget-layered-nav accordion rounded-0 shadow-none border-bottom">
+                                                        <div class="border-0">
+                                                            <div class="card-collapse">
+                                                                <h3 class="widget-title mb-0">
+                                                                    <button class="btn btn-link btn-block card-btn py-2 px-5 text-lh-3" type="button" data-toggle="collapse" data-target="#layeredFilterCity" aria-expanded="false" aria-controls="collapseExample">
+                                                                        <span class="row align-items-center">
+                                                                            <span class="col-9">
+                                                                                <span class="font-weight-bold font-size-17 text-dark mb-3">City</span>
+                                                                            </span>
+                                                                            <span class="col-3 text-right">
+                                                                                <span class="card-btn-arrow">
+                                                                                    <i class="fa-solid fa-chevron-up small"></i>
+                                                                                </span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div class="collapse show" id="layeredFilterCity">
+                                                                <div class="card-body pt-0 mt-1 px-5 pb-4">
+                                                                    <ul class="filter-nav-list">
+                                                                        <li class="item-nav-layered custom-checkbox">
+                                                                            <input type="checkbox" name="" id="city-nav1" class="custom-control-input">
+                                                                            <label for="city-nav1" class="custom-control-label">
+                                                                               Amsterdam
+                                                                            </label>
+                                                                            <span class="count">2</span>
+                                                                        </li>
+                                                                        <li class="item-nav-layered custom-checkbox">
+                                                                            <input type="checkbox" name="" id="city-nav2" class="custom-control-input">
+                                                                            <label for="city-nav2" class="custom-control-label">
+                                                                                London
+                                                                            </label>
+                                                                            <span class="count">3</span>
+                                                                        </li>
+                                                                        <li class="item-nav-layered custom-checkbox">
+                                                                            <input type="checkbox" name="" id="city-nav3" class="custom-control-input">
+                                                                            <label for="city-nav3" class="custom-control-label">
+                                                                                Rotterdam
+                                                                            </label>
+                                                                            <span class="count">2</span>
+                                                                        </li>
+                                                                        <li class="item-nav-layered custom-checkbox">
+                                                                            <input type="checkbox" name="" id="city-nav4" class="custom-control-input">
+                                                                            <label for="city-nav4" class="custom-control-label">
+                                                                                Turkey
+                                                                            </label>
+                                                                            <span class="count">4</span>
+                                                                        </li>
+                                                                        <li class="item-nav-layered custom-checkbox">
+                                                                            <input type="checkbox" name="" id="city-nav5" class="custom-control-input">
+                                                                            <label for="city-nav5" class="custom-control-label">
+                                                                                Eindhoven
+                                                                            </label>
+                                                                            <span class="count">2</span>
+                                                                        </li>
+                                                                        <li class="item-nav-layered custom-checkbox">
+                                                                            <input type="checkbox" name="" id="city-nav6" class="custom-control-input">
+                                                                            <label for="city-nav6" class="custom-control-label">
+                                                                                Valkenburg
+                                                                            </label>
+                                                                            <span class="count">4</span>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer footer-v2 mt-4">
+            <div class="space-bottom-2 space-top-1">
+                <div class="container">
+                    <div class="row justify-content-xl-between">
+                        <div class="footer-widget-1 mb-4 col-12 col-lg-4 col-xl-3dot1 mb-6 mb-md-10">
+                            <div class="widget widget-info-footer">
+                                <h6 class="widget-title mb-xl-4">
+                                    Need My Travel Help?
+                                </h6>
+                                <div class="widget-phone">
+                                    <div class="mb-5 mr-md-7 mr-lg-0">
+                                        <a href="tel:+">
+                                            <div class="d-flex align-items-center">
+                                                <div class="mr-4">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px">
+                                                        <path fill-rule="evenodd" class="fill-primary" d="M36.093,16.717 L33.133,16.717 L30.864,19.693 C30.717,19.886 30.487,20.000 30.244,20.000 C30.244,20.000 30.243,20.000 30.243,20.000 C30.000,20.000 29.771,19.888 29.623,19.695 L27.335,16.717 L24.372,16.717 C22.218,16.717 20.465,14.965 20.465,12.811 L20.465,3.907 C20.465,1.753 22.218,0.001 24.372,0.001 L36.093,0.001 C38.247,0.001 40.000,1.753 40.000,3.907 L40.000,12.811 C40.000,14.965 38.247,16.717 36.093,16.717 ZM38.437,3.907 C38.437,2.615 37.386,1.563 36.093,1.563 L24.372,1.563 C23.080,1.563 22.028,2.615 22.028,3.907 L22.028,12.811 C22.028,14.103 23.080,15.155 24.372,15.155 L27.721,15.155 C27.964,15.155 28.193,15.268 28.340,15.460 L30.240,17.934 L32.124,15.462 C32.272,15.269 32.502,15.155 32.746,15.155 L36.093,15.155 C37.386,15.155 38.437,14.103 38.437,12.811 L38.437,12.811 L38.437,3.907 ZM31.014,8.429 L31.014,9.647 C31.014,10.078 30.664,10.428 30.232,10.428 C29.801,10.428 29.451,10.078 29.451,9.647 L29.451,8.239 C29.451,7.618 29.876,7.089 30.485,6.953 C31.041,6.829 31.416,6.323 31.376,5.752 C31.337,5.186 30.881,4.730 30.316,4.691 C29.992,4.669 29.685,4.777 29.451,4.996 C29.216,5.216 29.086,5.514 29.086,5.834 C29.086,6.266 28.736,6.616 28.305,6.616 C27.873,6.616 27.523,6.266 27.523,5.834 C27.523,5.087 27.837,4.365 28.384,3.854 C28.939,3.336 29.663,3.081 30.423,3.132 C31.763,3.225 32.843,4.304 32.935,5.644 C33.024,6.927 32.225,8.068 31.014,8.429 ZM30.233,11.646 C30.438,11.646 30.640,11.729 30.785,11.874 C30.930,12.020 31.014,12.221 31.014,12.427 C31.014,12.633 30.930,12.834 30.785,12.980 C30.640,13.125 30.438,13.209 30.233,13.209 C30.027,13.209 29.825,13.125 29.680,12.980 C29.535,12.834 29.451,12.633 29.451,12.427 C29.451,12.221 29.535,12.020 29.680,11.874 C29.825,11.729 30.027,11.646 30.233,11.646 ZM14.440,16.019 L23.973,25.550 L24.760,24.764 C24.760,24.764 24.760,24.764 24.760,24.764 C24.760,24.764 24.761,24.763 24.761,24.763 L26.731,22.794 C27.574,21.951 28.695,21.487 29.887,21.487 C31.079,21.487 32.200,21.951 33.043,22.794 L38.693,28.442 C39.536,29.285 40.000,30.406 40.000,31.598 C40.000,32.790 39.536,33.910 38.693,34.753 L37.204,36.242 C34.780,38.665 31.557,40.000 28.129,40.000 C24.701,40.000 21.478,38.665 19.054,36.242 L13.486,30.676 C13.181,30.370 13.181,29.875 13.486,29.570 C13.792,29.265 14.286,29.265 14.592,29.570 L20.159,35.137 C22.288,37.265 25.118,38.438 28.129,38.438 C30.646,38.438 33.038,37.617 34.998,36.104 L25.313,26.421 L24.526,27.208 C24.221,27.513 23.726,27.513 23.421,27.208 L12.782,16.572 C12.636,16.425 12.553,16.227 12.553,16.019 C12.553,15.812 12.636,15.614 12.782,15.467 L16.092,12.158 C17.223,11.027 17.223,9.187 16.092,8.056 L10.448,2.413 C9.317,1.282 7.476,1.282 6.345,2.413 L4.928,3.830 L10.929,9.830 C11.234,10.135 11.234,10.630 10.929,10.935 C10.776,11.087 10.576,11.163 10.376,11.163 C10.176,11.163 9.976,11.087 9.824,10.935 L3.890,5.002 C0.490,9.418 0.812,15.794 4.856,19.837 L10.346,25.326 C10.651,25.631 10.651,26.126 10.346,26.431 C10.041,26.736 9.546,26.736 9.241,26.431 L3.751,20.943 C-1.253,15.940 -1.253,7.800 3.751,2.797 L5.240,1.308 C6.981,-0.432 9.813,-0.432 11.553,1.308 L17.197,6.951 C18.938,8.691 18.938,11.522 17.197,13.263 L14.440,16.019 ZM36.170,35.066 L37.588,33.648 C38.135,33.101 38.437,32.372 38.437,31.598 C38.437,30.823 38.135,30.094 37.587,29.547 L31.938,23.899 C31.390,23.351 30.662,23.049 29.887,23.049 C29.112,23.049 28.384,23.351 27.836,23.899 L26.418,25.316 L36.170,35.066 ZM11.492,12.280 C11.492,12.074 11.576,11.873 11.721,11.727 C11.866,11.581 12.068,11.498 12.274,11.498 C12.479,11.498 12.681,11.581 12.826,11.727 C12.971,11.873 13.055,12.074 13.055,12.280 C13.055,12.485 12.971,12.687 12.826,12.832 C12.681,12.977 12.479,13.061 12.274,13.061 C12.068,13.061 11.866,12.977 11.721,12.832 C11.576,12.687 11.492,12.485 11.492,12.280 ZM12.046,27.349 C12.252,27.349 12.453,27.433 12.599,27.578 C12.744,27.724 12.828,27.925 12.828,28.130 C12.828,28.336 12.744,28.538 12.599,28.683 C12.453,28.828 12.252,28.912 12.046,28.912 C11.841,28.912 11.639,28.828 11.494,28.683 C11.348,28.538 11.265,28.336 11.265,28.130 C11.265,27.925 11.348,27.724 11.494,27.578 C11.639,27.433 11.841,27.349 12.046,27.349 Z"></path>
+                                                        </svg>
+                                                </div>
+                                                <div class="">
+                                                    <div class="mb-2 h6 font-weight-normal text-gray-1">Got Questions ? Call us 24/7!</div>
+                                                    <small class="d-block font-size-18 font-weight-normal text-primary">Call Us: <span class="text-primary font-weight-semi-bold">(888) 1234 56789</span></small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="ml-md-6 ml-lg-0">
+                                        <div class="mb-4">
+                                            <h4 class="h6 font-weight-bold mb-2 font-size-17">Contact Info</h4>
+                                            <address class="pr-4">
+                                        <span class="mb-2 h6 font-weight-normal text-gray-1">
+                                        PO Box CT16122 Collins Street West, Victoria 8007,Australia.
+                                        </span>
+                                        </address>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget widget-social">
+                                <ul class="social-menu list-inline d-flex mb-0">
+                                    <li class="list-inline-item mr-2 pl-1">
+                                        <a title="Facebook" href="https://www.facebook.com/" class="btn btn-icon btn-social">
+                                            <i class="fab fa-facebook-f btn-icon__inner btn-icon__inner" aria-hidden="true"></i>
+                                            <span class="sr-only">Facebook</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item mr-2 pl-1">
+                                        <a title="Twitter" href="https://www.twitter.com/" class="btn btn-icon btn-social">
+                                            <i class="fab fa-twitter btn-icon__inner btn-icon__inner " aria-hidden="true"></i>
+                                            <span class="sr-only">Twitter</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item mr-2 pl-1">
+                                        <a title="Instagram" href="https://www.instagram.com/" class="btn btn-icon btn-social">
+                                            <i class="fab fa-instagram btn-icon__inner btn-icon__inner " aria-hidden="true"></i>
+                                            <span class="sr-only">Instagram</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item mr-2 pl-1">
+                                        <a title="Linkedin" href="https://www.linkedin.com/" class="btn btn-icon btn-social">
+                                            <i class="fab fa-linkedin-in btn-icon__inner btn-icon__inner " aria-hidden="true"></i>
+                                            <span class="sr-only">Linkedin</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-widget-2 mb-4 col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-10">
+                            <div class="widget widget-nav-menu">
+                                <h6 class="widget-title font-weight-bold mb-2 mb-xl-4">
+                                    Company
+                                </h6>
+                                <div class="menu-footer-container">
+                                    <ul class="menu-footer">
+                                        <li class="menu-item">
+                                            <a href="./about.html">About us</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">Careers</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">Terms of Use</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">Privacy Statement</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">Give Us Feedbacks</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-widget-3 mb-4 col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-10">
+                            <div class="widget widget-nav-menu">
+                                <h6 class="widget-title font-weight-bold mb-2 mb-xl-4">
+                                    Other Services
+                                </h6>
+                                <div class="menu-footer-container">
+                                    <ul class="menu-footer">
+                                        <li class="menu-item">
+                                            <a href="">Investor Relations</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">Rewards Program</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">PointsPLUS</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">Partners</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">List My Hotel</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-widget-4 mb-4 col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6">
+                            <div class="widget widget-nav-menu">
+                                <h6 class="widget-title font-weight-bold mb-2 mb-xl-4">
+                                    Support
+                                </h6>
+                                <div class="menu-footer-container">
+                                    <ul class="menu-footer">
+                                        <li class="menu-item">
+                                            <a href="">Account</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">Legal</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">Legal</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">Affiliate Program</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">Privacy Policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-widget-4 mb-4 col-12 col-md-6 col-lg col-xl-3dot1">
+                            <div class="widget widget-subscribe">
+                                <h6 class="widget-title font-weight-bold mb-2 mb-xl-4">
+                                    Mailing List
+                                </h6>
+                                <p class="mb-lg-n4 text-gray-1">Sign up for our mailing list to get latest updates and offers.</p>
+                                <div class="widget widget-form-subscribe">
+                                    <div class="input-group flex-nowrap">
+                                        <div class="input-text mr-3">
+                                            <input type="text" placeholder="Your Email" class="form-control">
+                                        </div>
+                                        <div class="btn-group">
+                                            <button type="submit" class="btn btn-primary">Subscribes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-info border-top space-1">
+                <div class="container">
+                    <div class="row d-block d-xl-flex align-items-md-center">
+                        <div class="col-xl-4 mb-4 mb-xl-0">
+                            <a href="./index.html" class="footer-logo-link d-inline-flex align-items-center" rel="home">
+                                <img width="58" height="54" src="./images/primary-logo.jpeg" class="" alt="MyTravel" loading="lazy">
+                                <span class="brand brand-dark">MyTravel</span>
+                            </a>
+                        </div>
+                        <div class="col-xl-8 d-block d-lg-flex justify-content-xl-end align-items-center">
+                            <div class="mb-4 mb-lg-0">
+                                <img src="https://mytravel.madrasthemes.com/wp-content/themes/mytravel/assets/img/credit-cards.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-credit border-top space-1">
+                <div class="container">
+                    <div class="d-lg-flex d-md-block justify-content-between align-items-center flex-wrap">
+                        <p class="mb-3 mb-lg-0 text-gray-1 text-left">
+                            © 2022 MyTravel.All rights reserved
+                        </p>
+                        <ul class="list-inline mb-0" id="menu-footer-navigation">
+                            <li class="list-inline-item pb-3 pb-md-0">
+                                <a href="" class="list-group-item-action pr-3">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="list-inline-item pb-3 pb-md-0">
+                                <a href="" class="list-group-item-action pr-3">
+                                    Hotel
+                                </a>
+                            </li>
+                            <li class="list-inline-item pb-3 pb-md-0">
+                                <a href="" class="list-group-item-action pr-3">
+                                    Tour
+                                </a>
+                            </li>
+                            <li class="list-inline-item pb-3 pb-md-0">
+                                <a href="" class="list-group-item-action pr-3">
+                                    Activity
+                                </a>
+                            </li>
+                            <li class="list-inline-item pb-3 pb-md-0">
+                                <a href="" class="list-group-item-action pr-3">
+                                    Rental
+                                </a>
+                            </li>
+                            <li class="list-inline-item pb-3 pb-md-0">
+                                <a href="" class="list-group-item-action pr-3">
+                                    Car
+                                </a>
+                            </li>
+                            <li class="list-inline-item pb-3 pb-md-0">
+                                <a href="" class="list-group-item-action pr-3">
+                                    Yacht
+                                </a>
+                            </li>
+                            <li class="list-inline-item pb-3 pb-md-0">
+                                <a href="" class="list-group-item-action pr-3">
+                                    Pages
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <a href="#" class="scrollup">
+        <i class="fa-sharp fa-solid fa-angle-up"></i>
+    </a>
+
+    <script src="./lib/js/jquery-3.6.1.min.js "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+    <script src="./lib/bootstrap/js/bootstrap.min.js "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js "></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./lib/js/style.js "></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
